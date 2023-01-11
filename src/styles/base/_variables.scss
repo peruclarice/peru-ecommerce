@@ -1,13 +1,27 @@
 // Colors
+$primary: #2697FF;
 $black: #232323;
-$white: #f6f6f6;
+$white: #f4f4f4;
+$muted: #A7A7A7;
+$success: #35D559;
+$warning: #FFD51F;
+$danger: #FF5858;
+
+// Background colors
+$background: #F5FAFF;
 
 // Font-family
 $font-family: 'Figtree';
 // $font-family: 'Plus Jakarta Sans';
 
 // Font-size
-$body-size: 16px;
+$body-size: 18px;
+$cta-size: 3.5em;
+$heading-size: 2.5em;
+$subheading-size: 2em;
+$span-size: .75em;
+
+$line-height: 1.2;
 
 // Font-weight
 $extra-light: 300;
@@ -24,3 +38,7 @@ $l: 1200px;
 $md: 960px;
 $sm: 767px;
 $xs: 320px;
+
+// Box shadows
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$primary-shadow: rgba(0, 133, 255, 0.08) 4px 4px 24px 4px;

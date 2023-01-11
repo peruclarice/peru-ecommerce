@@ -1,8 +1,9 @@
 @import '../base/variables';
 
-*, html, body, h1, h2, h3, h4, h5, h6, p {
+*, html, body, h1, h2, h3, h4, h5, h6, p, span {
     font-family: $font-family;
     font-weight: $regular;
+    line-height: $line-height;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: .25em 0 .5em;
@@ -12,11 +13,14 @@ body, p {
 }
 h1 {
     font-weight: $semibold;
-    font-size: 3em;
+    font-size: $heading-size;
 }
 h2 {
-    font-size: 2em;
+    font-size: $subheading-size;
 }
 p {
     font-weight: $regular;
+}
+span {
+    font-size: $span-size;
 }

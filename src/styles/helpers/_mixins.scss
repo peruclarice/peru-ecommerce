@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 @mixin flexbox() {
     display: -webkit-box;
     display: -moz-box;
@@ -19,3 +21,15 @@
     align-items: $align-items;
     -ms-flex-pack: $align-items;
 }
+// @mixin box-shadow($box-shadow) {
+//     -webkit-box-shadow: $box-shadow;
+//     -moz-box-shadow: $box-shadow;
+//     -ms-box-shadow: $box-shadow;
+//     box-shadow: $box-shadow;
+// }
+// @mixin primary-box-shadow($primary-shadow) {
+//     -webkit-box-shadow: $primary-box-shadow;
+//     -moz-box-shadow: $primary-box-shadow;
+//     -ms-box-shadow: $primary-box-shadow;
+//     box-shadow: $primary-box-shadow;
+// }
