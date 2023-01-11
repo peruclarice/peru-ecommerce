@@ -1,0 +1,29 @@
+@import '../helpers/mixins';
+@import '../base/variables';
+
+.flex-center {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    &.flex-column {
+        flex-direction: column;
+    }
+    &.flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+    &.flex-row {
+        flex-direction: row;
+    }
+    &.flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+section, #section, .section {
+    min-height: 100vh;
+}
+.container {
+    max-width: $xl;
+    width: 100%;
+    margin: 0 2em;
+}

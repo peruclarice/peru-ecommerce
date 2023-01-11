@@ -1,0 +1,30 @@
+@import './base/grid';
+
+// Screen width 1200px
+@media only screen and (max-width: $l) {
+    .container {
+        max-width: $l;
+    }
+}
+
+// Screen width 960px
+@media only screen and (max-width: $md) {
+    .container {
+        max-width: $md;
+    }
+}
+
+// Screen width 768px
+@media only screen and (max-width: $sm) {
+    .container {
+        max-width: $sm;
+        margin: 0 1em;
+    }
+}
+
+// Screen width 320px
+@media only screen and (max-width: $xs) {
+    .container {
+        max-width: $xs;
+    }
+}
