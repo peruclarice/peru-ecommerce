@@ -3,3 +3,22 @@
 @import 'typography';
 @import 'variables';
 @import 'grid';
+
+a {
+    color: $primary;
+    &:hover {
+        color: $accent;
+    }
+}
+.b-0 {
+    border: 0;
+}
+html, body {
+    background-color: $background;
+}
+.bg-primary {
+    background-color: $primary !important;
+}
+.bg-accent {
+    background-color: $accent !important;
+}

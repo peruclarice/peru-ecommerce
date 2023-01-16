@@ -2,29 +2,49 @@
 
 // Screen width 1200px
 @media only screen and (max-width: $l) {
-    .container {
-        max-width: $l;
-    }
+    // .container {
+    //     max-width: $l;
+    // }
 }
 
-// Screen width 960px
+// Screen width 992px
 @media only screen and (max-width: $md) {
-    .container {
-        max-width: $md;
+    // .container {
+    //     max-width: $md;
+    // }
+    .quotes-from-me {
+        .row {
+            text-align: center;
+            .content {
+                margin-bottom: 1.5em;
+                h2 {
+                    font-size: 1.5em;
+                }
+            }
+            img {
+                max-width: 150px;
+                height: 150px;
+            }
+        }
     }
 }
 
 // Screen width 768px
 @media only screen and (max-width: $sm) {
-    .container {
-        max-width: $sm;
-        margin: 0 1em;
+    // .container {
+    //     max-width: $sm;
+    //     margin: 0 1em;
+    // }
+    .cta {
+        h1 {
+            font-size: $heading-size;
+        }
     }
 }
 
 // Screen width 320px
 @media only screen and (max-width: $xs) {
-    .container {
-        max-width: $xs;
-    }
+    // .container {
+    //     max-width: $xs;
+    // }
 }

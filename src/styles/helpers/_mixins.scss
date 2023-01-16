@@ -21,15 +21,86 @@
     align-items: $align-items;
     -ms-flex-pack: $align-items;
 }
-// @mixin box-shadow($box-shadow) {
-//     -webkit-box-shadow: $box-shadow;
-//     -moz-box-shadow: $box-shadow;
-//     -ms-box-shadow: $box-shadow;
-//     box-shadow: $box-shadow;
-// }
-// @mixin primary-box-shadow($primary-shadow) {
-//     -webkit-box-shadow: $primary-box-shadow;
-//     -moz-box-shadow: $primary-box-shadow;
-//     -ms-box-shadow: $primary-box-shadow;
-//     box-shadow: $primary-box-shadow;
-// }
+@mixin box-shadow($box-shadow) {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+@mixin primary-box-shadow($primary-shadow) {
+    -webkit-box-shadow: $primary-shadow;
+    -moz-box-shadow: $primary-shadow;
+    -ms-box-shadow: $primary-shadow;
+    box-shadow: $primary-shadow;
+    &:hover {
+        @include primary-box-shadow-hover($primary-shadow-hover);
+    }
+}
+@mixin accent-box-shadow($accent-shadow) {
+    -webkit-box-shadow: $accent-shadow;
+    -moz-box-shadow: $accent-shadow;
+    -ms-box-shadow: $accent-shadow;
+    box-shadow: $accent-shadow;
+    &:hover {
+        @include accent-box-shadow-hover($accent-shadow-hover);
+    }
+}
+@mixin success-box-shadow($success-shadow) {
+    -webkit-box-shadow: $success-shadow;
+    -moz-box-shadow: $success-shadow;
+    -ms-box-shadow: $success-shadow;
+    box-shadow: $success-shadow;
+    &:hover {
+        @include success-box-shadow-hover($success-shadow-hover);
+    }
+}
+@mixin danger-box-shadow($danger-shadow) {
+    -webkit-box-shadow: $danger-shadow;
+    -moz-box-shadow: $danger-shadow;
+    -ms-box-shadow: $danger-shadow;
+    box-shadow: $danger-shadow;
+    &:hover {
+        @include danger-box-shadow-hover($danger-shadow-hover);
+    }
+}
+@mixin warning-box-shadow($warning-shadow) {
+    -webkit-box-shadow: $warning-shadow;
+    -moz-box-shadow: $warning-shadow;
+    -ms-box-shadow: $warning-shadow;
+    box-shadow: $warning-shadow;
+    &:hover {
+        @include warning-box-shadow-hover($warning-shadow-hover);
+    }
+}
+
+// Shadow Hovers
+@mixin primary-box-shadow-hover($primary-shadow-hover) {
+    -webkit-box-shadow: $primary-shadow-hover;
+    -moz-box-shadow: $primary-shadow-hover;
+    -ms-box-shadow: $primary-shadow-hover;
+    box-shadow: $primary-shadow-hover;
+}
+@mixin accent-box-shadow-hover($accent-shadow-hover) {
+    -webkit-box-shadow: $accent-shadow-hover;
+    -moz-box-shadow: $accent-shadow-hover;
+    -ms-box-shadow: $accent-shadow-hover;
+    box-shadow: $accent-shadow-hover;
+}
+@mixin success-box-shadow-hover($success-shadow-hover) {
+    -webkit-box-shadow: $success-shadow-hover;
+    -moz-box-shadow: $success-shadow-hover;
+    -ms-box-shadow: $success-shadow-hover;
+    box-shadow: $success-shadow-hover;
+}
+@mixin danger-box-shadow-hover($danger-shadow-hover) {
+    -webkit-box-shadow: $danger-shadow-hover;
+    -moz-box-shadow: $danger-shadow-hover;
+    -ms-box-shadow: $danger-shadow-hover;
+    box-shadow: $danger-shadow-hover;
+}
+@mixin warning-box-shadow-hover($warning-shadow-hover) {
+    -webkit-box-shadow: $warning-shadow-hover;
+    -moz-box-shadow: $warning-shadow-hover;
+    -ms-box-shadow: $warning-shadow-hover;
+    box-shadow: $warning-shadow-hover;
+}

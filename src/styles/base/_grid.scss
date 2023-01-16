@@ -1,29 +1,39 @@
 @import '../helpers/mixins';
 @import '../base/variables';
 
-.flex-center {
-    @include flexbox;
-    @include justify-content(center);
-    @include align-items(center);
-    &.flex-column {
-        flex-direction: column;
+.flex {
+    flex-wrap: wrap;
+    &.flex-center {
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        &.flex-column {
+            flex-direction: column;
+        }
+        &.flex-column-reverse {
+            flex-direction: column-reverse;
+        }
+        &.flex-row {
+            flex-direction: row;
+        }
+        &.flex-row-reverse {
+            flex-direction: row-reverse;
+        }
     }
-    &.flex-column-reverse {
-        flex-direction: column-reverse;
-    }
-    &.flex-row {
-        flex-direction: row;
-    }
-    &.flex-row-reverse {
-        flex-direction: row-reverse;
+    &.flex-space-between {
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
     }
 }
 
+
 section, #section, .section {
     min-height: 100vh;
+    padding:  3.5em 0;
 }
-.container {
-    max-width: $xl;
-    width: 100%;
-    margin: 0 2em;
-}
+// .container {
+//     max-width: $xl;
+//     width: 100%;
+//     margin: 0 2em;
+// }

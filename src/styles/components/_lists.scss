@@ -1,0 +1,15 @@
+@import '../base/variables';
+
+ul {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: .25em;
+        margin-bottom: .4em;
+        &.list-item {   
+            i, svg, .fas, .fa {
+                margin: 0 .25rem;
+            }
+        }
+    }
+}

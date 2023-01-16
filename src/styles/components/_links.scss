@@ -1,0 +1,31 @@
+@import '../base/variables';
+@import '../helpers/mixins';
+
+.social-link {
+    text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
+    @include primary-box-shadow($primary-shadow);
+}
+.nav {
+    .nav-link {
+        color: $primary;
+    }
+    .nav-pills {
+        .nav-link {
+            color: $primary !important;
+            background-color: transparent !important;
+            &.active {
+                color: $white  !important;
+                background-color: $primary !important;
+            }
+        }
+    }
+}
+

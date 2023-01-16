@@ -3,9 +3,16 @@ $primary: #2697FF;
 $black: #232323;
 $white: #f4f4f4;
 $muted: #A7A7A7;
-$success: #35D559;
-$warning: #FFD51F;
+$success: #24b243;
+$warning: #ebc000;
 $danger: #FF5858;
+$accent: #FF7262;
+
+// Custom Colors
+$purple: #7B61FF;
+$lilac-purple: #71B8FF;
+$green: #0ACF83;
+
 
 // Background colors
 $background: #F5FAFF;
@@ -15,11 +22,12 @@ $font-family: 'Figtree';
 // $font-family: 'Plus Jakarta Sans';
 
 // Font-size
-$body-size: 18px;
-$cta-size: 3.5em;
+$body-size: 14px;
+$cta-size: 4em;
 $heading-size: 2.5em;
-$subheading-size: 2em;
-$span-size: .75em;
+$subheading-size: 1.5em;
+$p-size: 1em;
+$span-size: .9em;
 
 $line-height: 1.2;
 
@@ -35,10 +43,24 @@ $extra-bold: 900;
 // Screens
 $xl: 1600px;
 $l: 1200px;
-$md: 960px;
+$md: 992px;
 $sm: 767px;
 $xs: 320px;
 
 // Box shadows
+$shadow-spread: 4px 4px 24px 4px;
+
+$text-shadow: 2px 2px 6px rgb(38, 151, 255, 0.2);
 $box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-$primary-shadow: rgba(0, 133, 255, 0.08) 4px 4px 24px 4px;
+$primary-shadow: rgba(0, 133, 255, 0.10) $shadow-spread;
+$success-shadow: rgb(53, 213, 89, 0.1) $shadow-spread;
+$warning-shadow: rgb(255, 213, 31, 0.1) $shadow-spread;
+$danger-shadow: rgb(255, 88, 88, 0.1) $shadow-spread;
+$accent-shadow: rgb(255, 113, 97, 0.1) $shadow-spread;
+
+
+$primary-shadow-hover: rgba(0, 133, 255, 0.30) $shadow-spread;
+$success-shadow-hover: rgb(53, 213, 89, 0.3) $shadow-spread;
+$warning-shadow-hover: rgb(235, 192, 0, 0.3) $shadow-spread;
+$danger-shadow-hover: rgb(255, 88, 88, 0.3) $shadow-spread;
+$accent-shadow-hover: rgb(199, 20, 0, 0.2) $shadow-spread;

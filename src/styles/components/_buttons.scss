@@ -1,20 +1,21 @@
 @import '../base/variables';
 @import '../helpers/mixins';
 
-button {
+.btn {
     background-color: $white;
     border: none;
     cursor: pointer;
     color: $black;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: .5rem;
-    max-width: 240px;
     border-radius: 50px;
     font-size: $body-size;
-    // @include box-shadow;
+    font-weight: $regular;
+    @include box-shadow($box-shadow);
     &:hover {
         background-color: black;
         color: white;
+        @include primary-box-shadow-hover($primary-shadow-hover);
     }
     &:disabled {
         background-color: #eee;
@@ -24,36 +25,44 @@ button {
         cursor: auto;
         box-shadow: none;
     }
+    i, span, svg, .fas, .fa {
+        margin: 0 .5rem;
+    }
     &.btn-primary {
         background-color: $primary;
         color: $white;
-        // @include primary-box-shadow;
+        @include primary-box-shadow($primary-shadow);
         &:hover {
             background-color: $white;
             color: $primary;
+            // @include primary-box-shadow-hover($primary-shadow-hover);
         }
     }
     &.btn-secondary {
-        background-color: $background;
+        background-color: $white;
         color: $primary;
-        &:hover {
-            background-color: $primary;
-            color: $background;
-        }
-    }
-    &.btn-tertiary {
-        background-color: $primary;
-        color: $white;
         border: 1px solid $primary;
         &:hover {
-            background-color: $white;
+            background-color: $background;
             color: $primary;
-            border: none;
+            border-color: transparent;
+        }
+    }
+    &.btn-accent {
+        background-color: $accent;
+        color: $white;
+        border: 1px solid $accent;
+        @include accent-box-shadow($accent-shadow);
+        &:hover {
+            background-color: $white;
+            color: $accent;
+            border-color: transparent;
         }
     }
     &.btn-success {
         background-color: $success;
         color: $white;
+        @include success-box-shadow($success-shadow);
         &:hover {
             background-color: $white;
             color: $success;
@@ -62,6 +71,7 @@ button {
     &.btn-warning {
         background-color: $warning;
         color: $white;
+        @include warning-box-shadow($warning-shadow);
         &:hover {
             background-color: $white;
             color: $warning;
@@ -70,6 +80,7 @@ button {
     &.btn-danger {
         background-color: $danger;
         color: $white;
+        @include danger-box-shadow($danger-shadow);
         &:hover {
             background-color: $white;
             color: $danger;
