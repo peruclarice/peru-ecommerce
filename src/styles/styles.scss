@@ -24,6 +24,9 @@ img {
     width: 100%;
     height: 100%;
 }
+.bg-primary-light {
+    background-color: $background;
+}
 
 .hero-section {
     min-height: 85vh;
@@ -127,6 +130,10 @@ img {
     }
 }
 
+i, span, svg, .fas, .fa fa-icon {
+    margin: 0 .5rem;
+}
+
 .testimonial-quotes {
     min-height: 50vh;
     // color: $white;
@@ -201,6 +208,107 @@ img {
 }
 .navbar {
     flex-direction: row;
+}
+
+.product-detail-container {
+    position: relative;
+    .enroll-container {
+        width: 100%;
+        // max-width: 500px;
+        // height: 20vh;
+        background-color: #f4f4f4;
+        position: fixed;
+        bottom: 0;
+        left: 250px;
+        z-index: 99;
+        padding: 1.5em 0;
+        border-radius: 1.25em;
+        @include box-shadow($box-shadow);
+        left: 0;
+        .row {
+            align-items: center;
+            justify-content: space-around;
+        }
+        .price {
+            font-size: 2em;
+            font-weight: $semibold;
+            margin: 0;
+        }
+    }
+    .image-cover {
+        height: 50vh; 
+        width: 100%;
+        object-fit: cover;
+        background-image: url(../assets/images/products/3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 2em;
+        color: $white;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        h1 {
+            color: $white;
+            text-shadow: $text-shadow;
+        }
+    }
+    .product-detail-content {
+        .title {
+            font-size: 2em;
+            // text-decoration: underline;
+            font-weight: $medium;
+        }
+        .hosted-by-img {
+            width: 10em; 
+            height: 10em;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .ul-numbers {
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: .5em;
+                .numbers, .badges {
+                    width: 1.8em;
+                    height: 1.8em;
+                    margin-right: .5em;
+                    border-radius: 50%;
+                    background-color: $accent-hue;
+                    color: $accent-shade;
+                    color: $accent;
+                    font-size: 1.5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .product-detail-accordion {
+            width: 100%;
+            .accordion {
+                .accordion-item {
+                    border-color: transparent;
+                    margin-bottom: 1em;
+                    border-radius: 1.25em;
+                    overflow: hidden;
+                    border-color: $accent;
+                    border: 1px solid $accent;
+                }
+            }
+        }
+    }
 }
 
 

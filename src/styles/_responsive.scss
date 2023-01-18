@@ -1,5 +1,43 @@
 @import './base/grid';
 
+@media screen and (min-width: $md) {
+    .header {
+        #navbarSupportedContent {
+            position: static;
+            background: transparent;
+            min-height: auto;
+            max-height: none;
+            height: 100%;
+            top: 0;
+            box-shadow: none;
+        }
+        .menu-collapse-container {
+            position: absolute;
+            top: 15vh;
+            left: 0;
+            right: 0;
+            width: 100%;
+            min-height: 50vh;
+            max-height: none;
+            // height: 100%;
+            background: white;
+            border-radius: 1em;
+            overflow: hidden;
+            box-shadow: $box-shadow;
+        }
+        .navbar {
+            .menu {
+                .nav-item {
+                    width: auto;
+                }
+            }
+        }
+        .menu-img {
+            display: block;
+        }
+    }
+}
+
 // Screen width 1200px
 @media only screen and (max-width: $l) {
     // .container {
@@ -27,6 +65,7 @@
             }
         }
     }
+    
 }
 
 // Screen width 768px

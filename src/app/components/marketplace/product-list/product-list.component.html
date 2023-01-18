@@ -1,27 +1,26 @@
 <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12">
+  
+    <div class="col-lg-4 col-md-6 col-sm-12 my-2" *ngFor="let product of products">
       <div class="card product-card b-0">
         <div class="card-header">
           <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
         </div>
         <div class="card-body">
-          <h2 class="card-title">Learn the basics of Figma Design</h2>
+          <h2 class="card-title">{{product?.title}}</h2>
           <ul class="course-details">
             <li class="list-item"><span><i class="fas fa-clock"></i> 42 Minutes</span></li>
             <li class="list-item"><span><i class="fas fa-layer-group"></i> Beginner Level</span></li>
           </ul>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, aliquid at. Nostrum praesentium magnam deserunt consequuntur dolor, neque fugiat, est quo, ab veritatis voluptas.
-          </p>
+          <p>{{product?.description}}</p>
           <div class="flex flex-space-between mt-3 mb-1">
-            <h2 class="price">19.99</h2>
+            <h2 class="price">{{product?.price}}</h2>
             <a href="#">
               <i class="wishlist-icon far fa-heart"></i>
             </a>
           </div>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
+          <a [routerLink]="['/products', product?.id]" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
         </div>
     </div>
     </div>
@@ -77,4 +76,6 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
+
+  <!-- <app-product-details></app-product-details> -->

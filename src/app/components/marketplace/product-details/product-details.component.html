@@ -1,4 +1,4 @@
-<div class="card product-card b-0">
+<!-- <div class="card product-card b-0">
     <div class="card-header">
       <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
     </div>
@@ -21,4 +21,206 @@
     <div class="card-footer">
       <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
     </div>
-</div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 my-2" *ngFor="let product of products">
+    <div class="card product-card b-0">
+      <div class="card-header">
+        <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">{{product?.title}}</h2>
+        <ul class="course-details">
+          <li class="list-item"><span><i class="fas fa-clock"></i> 42 Minutes</span></li>
+          <li class="list-item"><span><i class="fas fa-layer-group"></i> Beginner Level</span></li>
+        </ul>
+        <p>{{product?.description}}</p>
+        <div class="flex flex-space-between mt-3 mb-1">
+          <h2 class="price">{{product?.price}}</h2>
+          <a href="#">
+            <i class="wishlist-icon far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a [routerLink]="['/products', product?.id]" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
+      </div>
+  </div>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div> -->
+
+<section class="product-detail-container p-0">
+  <div class="enroll-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 p-0">
+          <div>
+            <p>This Course is going for</p>
+            <h2 class="price">$50.00</h2>
+            <!-- <div class="flex flex-center justify-content-start">
+              <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-6 p-0">
+          <a href="#" class="btn btn-accent w-100">Buy This Course</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card border-0 p-0">
+    <div class="card-header border-0 image-cover">
+      <div class="container">
+        <h1>Learn the basics of Figma Design</h1>
+        <!-- <h1>{{product?.title}}</h1> -->
+        <!-- <div class="flex flex-center justify-content-start">
+          <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+          <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+        </div> -->
+        <div>
+          <a href="#" class="btn btn-primary">Buy This Course for $50.00</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body p-0">
+      <!-- <div class="image-cover">
+        <img src="../assets/images/products/3.jpg" alt="image-cover">
+      </div> -->
+      <section class="product-detail-content">
+        <div class="container">
+          <div class="card border-0">
+            <div class="card-header border-0 bg-transparent px-0">
+              <h2 class="title">Course Overview</h2>
+            </div>
+            <div class="flex flex-center justify-content-start">
+              <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos voluptatibus sed dolore, sit ducimus necessitatibus debitis iure, dolorum facilis similique? Labore soluta suscipit debitis tempora ullam. Porro minima repellat ea doloribus ut nulla, possimus repellendus optio nobis excepturi amet obcaecati non.
+            </p>
+              <div class="card border-0 my-3">
+                <h2 class="card-tile">Meet your instructor</h2>
+                <img src="../assets/images/profile_pic.jpg" alt="" class="hosted-by-img">
+                <p>Hosted By: <b>Clarice Peru</b></p>
+              </div>
+              <div class="card border-0 my-3">
+                <h2 class="card-title">Course Overview</h2>
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos voluptatibus sed dolore, sit ducimus necessitatibus debitis iure, dolorum facilis similique? Labore soluta suscipit debitis tempora ullam. Porro minima repellat ea doloribus ut nulla, possimus repellendus optio nobis excepturi amet obcaecati non.
+                  </p>
+                </div>
+                <div class="card border-0 my-3">
+                  <div class="card-header border-0 bg-transparent">
+                    <h2 class="card-title">Modules in this course</h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="ul-numbers">
+                      <li><span class="numbers">01</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li><span class="numbers">02</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li><span class="numbers">03</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="card border-0 my-3">
+                  <div class="card-header border-0 bg-transparent">
+                    <h2 class="card-title">Who is this course for ?</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="product-detail-accordion my-3">
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+    
+                        <ngb-panel title="Experienced designers">
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                        </ngb-panel>
+    
+                        <ngb-panel title="Challenge driven individuals">
+                          <ng-template ngbPanelContent>
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                              moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                              vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                              heard of them accusamus labore sustainable VHS.
+                          </ng-template>
+                          </ngb-panel>
+    
+                        <!-- <ngb-panel>
+                        <ng-template ngbPanelTitle>
+                            <span>&#9733; <b>Fancy</b> title &#9733;</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                        </ngb-panel>
+    
+                        <ngb-panel title="Disabled" [disabled]="true">
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                        </ngb-panel> -->
+    
+                    </ngb-accordion>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 my-3">
+                  <div class="card-header border-0 bg-transparent">
+                    <h2 class="card-title">What you'll get from this</h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="ul-numbers">
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+    <!-- Join the community -->
+  <app-join-community></app-join-community>
+</section>

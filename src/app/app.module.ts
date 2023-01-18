@@ -28,6 +28,9 @@ import { ProductContainerComponent } from './components/marketplace/product-cont
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { JoinCommunityComponent } from './components/join-community/join-community.component';
 import { BodyComponent } from './components/body/body.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 export function playerFactory(): any {  
   return import('lottie-web');
@@ -64,6 +67,9 @@ export function playerFactory(): any {
     CommonModule,
     LottieModule.forRoot({ player: playerFactory }),
     FontAwesomeModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
