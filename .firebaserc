@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "peru-designs-ecommerce": {
+      "hosting": {
+        "peru-ecommerce": [
+          "peru-designs-ecommerce"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "peru-designs-ecommerce"
+  }
+}

@@ -31,6 +31,40 @@ import { BodyComponent } from './components/body/body.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+import { providePerformance,getPerformance } from '@angular/fire/performance';
+import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+//import { AngularFireModule } from '@angular/fire';
+// import { AngularFirestoreModule } from '@angular/fire/firestore';
+// import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+// import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCmVNEmrNm18PJWrh3ERinbIbBmsGCL0ys",
+  authDomain: "peru-designs-ecommerce.firebaseapp.com",
+  databaseURL: "https://peru-designs-ecommerce-default-rtdb.firebaseio.com",
+  projectId: "peru-designs-ecommerce",
+  storageBucket: "peru-designs-ecommerce.appspot.com",
+  messagingSenderId: "809330476507",
+  appId: "1:809330476507:web:bcc00d3053f84082c2d3fe"
+};
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
 export function playerFactory(): any {  
   return import('lottie-web');
@@ -70,8 +104,23 @@ export function playerFactory(): any {
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    provideFunctions(() => getFunctions()),
+    provideMessaging(() => getMessaging()),
+    providePerformance(() => getPerformance()),
+    provideRemoteConfig(() => getRemoteConfig()),
+    provideStorage(() => getStorage()),
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule
   ],
-  providers: [],
+  providers: [
+    ScreenTrackingService,UserTrackingService,
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

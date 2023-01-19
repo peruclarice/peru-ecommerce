@@ -9,4 +9,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'peru-ecommerce';
   faCoffee = faCoffee;
+
+  // constructor(private dialog: MatDialog, private store: AngularFirestore) {}
 }

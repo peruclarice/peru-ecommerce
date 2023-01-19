@@ -1,8 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductApiService } from 'src/app/service/network-calls/product-api.service';
+// import { ProductApiService } from 'src/app/service/network-calls/product-api.service';
+import { AngularFirestore, AngularFirestoreCollection } from "@angular/fire/compat/firestore";
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
+import { Observable } from 'rxjs';
+import { ProductListComponent } from '../product-list/product-list.component';
+
+interface Product {
+  title: string
+  img: string
+  description: string
+  price: number
+  duration: string
+}
 
 @Component({
   selector: 'app-product-details',
@@ -10,23 +21,44 @@ import { faMedal } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
+
+  products$! : Observable<Product[]>;
+  productsCollection: AngularFirestoreCollection<Product>;
+  productDisplay = [];
+   
+  constructor(private appstore: AngularFirestore){
+    this.productsCollection = this.appstore.collection<Product>('products');
+    this.products$! = this.productsCollection.valueChanges();
+
+  }
+
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+    this.products$!.subscribe((subscribe) => {
+       this.productDisplay = subscribe[0]
+    })
+    
+  }
   faFacebookF = faFacebookF;
   faClock = faClock;
   faMedal = faMedal;
   
-  products = [];
 
-  constructor(
-    private productApiService: ProductApiService
-  ) {}
-  ngOnInit(): void {
-    this.getProducts();
-  }
+  
+  // products = [];
 
-  private getProducts() {
-    this.productApiService.getProducts().subscribe((response: any) => {
-      this.products = response.products;
-      console.log(this.products[0]);
-    });
-  }
+  // constructor(
+  //   private productApiService: ProductApiService
+  // ) {}
+  // ngOnInit(): void {
+  //   this.getProducts();
+  // }
+
+  // private getProducts() {
+  //   this.productApiService.getProducts().subscribe((response: any) => {
+  //     this.products = response.products;
+  //     console.log(this.products[0]);
+  //   });
+  // }
+  
 }
