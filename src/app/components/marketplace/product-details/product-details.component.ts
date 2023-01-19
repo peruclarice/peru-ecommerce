@@ -22,23 +22,24 @@ interface Product {
 })
 export class ProductDetailsComponent implements OnInit {
 
-  products$! : Observable<Product[]>;
+  products : Observable<Product[]>;
   productsCollection: AngularFirestoreCollection<Product>;
-  productDisplay = [];
+  productDisplay: Product[] = [];
    
   constructor(private appstore: AngularFirestore){
     this.productsCollection = this.appstore.collection<Product>('products');
-    this.products$! = this.productsCollection.valueChanges();
+    this.products = this.productsCollection.valueChanges();
 
   }
 
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
-    this.products$!.subscribe((subscribe) => {
-       this.productDisplay = subscribe[0]
-    })
-    
+    this.products.subscribe((data) => {
+      this.productDisplay = data;
+      console.log(this.productDisplay);
+    });
   }
+  
   faFacebookF = faFacebookF;
   faClock = faClock;
   faMedal = faMedal;
