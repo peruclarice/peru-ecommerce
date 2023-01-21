@@ -1,68 +1,3 @@
-<!-- <div class="card product-card b-0">
-    <div class="card-header">
-      <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
-    </div>
-    <div class="card-body">
-      <h2 class="card-title">Learn the basics of Figma Design</h2>
-      <ul class="course-details">
-        <li class="list-item"><span><i class="fas fa-clock"></i> 42 Minutes</span></li>
-        <li class="list-item"><span><i class="fas fa-layer-group"></i> Beginner Level</span></li>
-      </ul>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, aliquid at. Nostrum praesentium magnam deserunt consequuntur dolor, neque fugiat, est quo, ab veritatis voluptas.
-      </p>
-      <div class="flex flex-space-between mt-3 mb-1">
-        <h2 class="price">19.99</h2>
-        <a href="#">
-          <i class="wishlist-icon far fa-heart"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
-    </div>
-</div> -->
-
-<!-- <div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12 my-2" *ngFor="let product of products">
-    <div class="card product-card b-0">
-      <div class="card-header">
-        <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
-      </div>
-      <div class="card-body">
-        <h2 class="card-title">{{product?.title}}</h2>
-        <ul class="course-details">
-          <li class="list-item"><span><i class="fas fa-clock"></i> 42 Minutes</span></li>
-          <li class="list-item"><span><i class="fas fa-layer-group"></i> Beginner Level</span></li>
-        </ul>
-        <p>{{product?.description}}</p>
-        <div class="flex flex-space-between mt-3 mb-1">
-          <h2 class="price">{{product?.price}}</h2>
-          <a href="#">
-            <i class="wishlist-icon far fa-heart"></i>
-          </a>
-        </div>
-      </div>
-      <div class="card-footer">
-        <a [routerLink]="['/products', product?.id]" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
-      </div>
-  </div>
-  </div>
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-end">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1">Previous</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
-</div> -->
-
 <section class="product-detail-container p-0">
   <div class="enroll-container">
     <div class="container">
@@ -70,7 +5,7 @@
         <div class="col-6 p-0">
           <div>
             <p>This Course is going for</p>
-            <h2 class="price">$50.00</h2>
+            <h2 class="price">${{productDisplay[0]?.price}}</h2>
             <!-- <div class="flex flex-center justify-content-start">
               <a href="#"><span class="btn btn-primary tag">NEW</span></a>
               <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
@@ -85,16 +20,16 @@
   </div>
   <div class="card border-0 p-0">
     <div class="card-header border-0 image-cover">
-      <div class="container">
+      <img [src]="productDisplay[0]?.img" alt="">
+      <div class="container" style="z-index: 2;">
         <!-- <h1>Learn the basics of Figma Design</h1> -->
-        <h1>{{productDisplay[0]?.price}}</h1>
-        <!-- I couldnt test this out on my PC cos the version of firebase i have is differnt hence angular error, please run it and show me the response -->
+        <h1>{{productDisplay[0]?.title}}</h1>
         <!-- <div class="flex flex-center justify-content-start">
           <a href="#"><span class="btn btn-primary tag">NEW</span></a>
           <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
         </div> -->
         <div>
-          <a href="#" class="btn btn-primary">Buy This Course for $50.00</a>
+          <a href="#" class="btn btn-primary">Buy This Course for ${{productDisplay[0]?.price}}</a>
         </div>
       </div>
     </div>
@@ -110,9 +45,10 @@
             </div>
             <div class="flex flex-center justify-content-start">
               <a href="#"><span class="btn btn-primary tag">NEW</span></a>
-              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>{{productDisplay[0]?.duration}}</p>
             </div>
             <p>
+              {{productDisplay[0]?.description}}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
             </p>
             <p>
@@ -127,6 +63,7 @@
                 <h2 class="card-title">Course Overview</h2>
                 <div class="card-body">
                   <p>
+                    {{productDisplay[0]?.description}}
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
                   </p>
                   <p>

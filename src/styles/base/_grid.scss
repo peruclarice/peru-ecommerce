@@ -2,9 +2,9 @@
 @import '../base/variables';
 
 .flex {
+    @include flexbox;
     flex-wrap: wrap;
     &.flex-center {
-        @include flexbox;
         @include justify-content(center);
         @include align-items(center);
         &.flex-column {
@@ -21,7 +21,6 @@
         }
     }
     &.flex-space-between {
-        @include flexbox;
         @include justify-content(space-between);
         @include align-items(center);
     }

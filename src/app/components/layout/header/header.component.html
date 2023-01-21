@@ -1,41 +1,21 @@
 <header class="header header-sticky">
   <div class="container-lg">
-    <!-- <nav class="navbar navbar-expand-lg px-0">
-      <ul class="nav">
-        <a href="#" class="nav-link">
-          <li class="nav-item">
-            <img src="../assets/images/peru-designs-logo.svg" class="logo" alt="logo">
-          </li>
-        </a>
-        <li class="nav-item">
-          <ul class="menu">
-            <a href="#" class="menu-link active"><li class="menu-item">Figma Classes</li></a>
-            <a href="#" class="menu-link"><li class="menu-item">UI/UX Classes</li></a>
-            <a href="#" class="menu-link"><li class="menu-item">Mentorship Classes</li></a>
-          </ul>
-        </li>
-        <a href="#" class="nav-link">
-          <li class="nav-item">Account</li>
-        </a>
-      </ul>
-    </nav> -->
-
     <nav class="navbar navbar-expand-lg navbar-light navbar-nav">
       <a class="navbar-brand" href="#">
         <img src="../assets/images/peru-designs-logo.svg" class="logo" alt="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <!-- <img src="../assets/images/icons/hamburger-menu.svg" alt="" width="32" height="32"> -->
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto menu">
-          <li class="nav-item active">
-            <a class="nav-link" data-bs-toggle="collapse" href="#figmaCollapse" role="button" aria-expanded="true" aria-controls="figmaCollapse">Figma Classes <span class="sr-only">(current)</span></a>
+          <li class="nav-item dropdown" style="position: static;">
+            <a class="nav-link" data-bs-toggle="dropdown" href="#" id="figmaDropdown" role="button" aria-expanded="false" aria-haspopup="true">Figma Classes <span class="sr-only">(current)</span></a>
 
             <!-- Menu 1 Collapse Menu-->
-            <div class="collapse menu-collapse-container" id="figmaCollapse">
+            <div class="dropdown-menu menu-collapse-container" aria-labelledby="figmaDropdown">
               <div class="container-lg">
                 <div class="row py-3">
 
@@ -184,11 +164,11 @@
             <!-- End of Menu 1 Collapse Menu-->
 
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#uiUxCollapse" role="button" aria-expanded="true" aria-controls="uiUxCollapse">UI/UX Classes</a>
+          <li class="nav-item dropdown" style="position: static;">
+            <a class="nav-link" data-bs-toggle="dropdown" href="#" id="uiUxDropdown" role="button" aria-expanded="flase" aria-haspopup="true">UI/UX Classes</a>
 
             <!-- Menu 2 Collapse Menu-->
-            <div class="collapse menu-collapse-container" id="uiUxCollapse">
+            <div class="dropdown-menu menu-collapse-container" aria-labelledby="uiUxDropdown">
               <div class="container-lg">
                 <div class="row py-3">
 
@@ -196,7 +176,161 @@
                   <div class="col-lg-3 col-md-12 col-12">
                     <div class="card border-0 bg-transparent">
                       <div class="card-header border-0 bg-transparent">
-                        <h2 class="overall-title">Figma Overview</h2>
+                        <h2 class="overall-title">UI/UX Overview</h2>
+                        <img src="../assets/images/figma.svg" alt="figma">
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Figma layout & tools</li>
+                            </a>
+                            <a href="#">
+                              <li>The grid system</li>
+                            </a>
+                            <a href="#" class="locked">
+                              <li>Tables & Forms</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h3 class="card-title">Designing Mockups</h3>
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Large surfaces e.g billbords</li>
+                            </a>
+                            <a href="#">
+                              <li>Clothes & accessories</li>
+                            </a>
+                            <a href="#">
+                              <li>Office stationary</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End column -->
+
+                  <!-- Column -->
+                  <div class="col-lg-3 col-md-12 col-12">
+
+                    <!-- Column -->
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h3 class="card-title">Beginner Classes </h3>
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Text & colors</li>
+                            </a>
+                            <a href="#">
+                              <li>Cards & modals (popups)</li>
+                            </a>
+                            <a href="#">
+                              <li>Navigation & layout</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- End column -->
+
+                    <!-- Column -->
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h3 class="card-title">Prototyping</h3>
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Modals & dropdowns</li>
+                            </a>
+                            <a href="#">
+                              <li>Horizontal & vertical scrolling</li>
+                            </a>
+                            <a href="#">
+                              <li>SLiders & carousels</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- End column -->
+
+                  </div>
+                  <!-- End column -->
+
+                  <!-- Column -->
+                  <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h3 class="card-title">Intemidiary Classes</h3>
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Creating Design systems</li>
+                            </a>
+                            <a href="#">
+                              <li>Advanced components & breakpoints</li>
+                            </a>
+                            <a href="#">
+                              <li>Developer handoff</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h3 class="card-title">Design On Different Screens</h3>
+                      </div>
+                      <div class="card-body">
+                        <ul>
+                            <a href="#">
+                              <li>Web application devices</li>
+                            </a>
+                            <a href="#">
+                              <li>Mobile application devices</li>
+                            </a>
+                            <a href="#">
+                              <li>Wearables</li>
+                            </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End column -->
+
+                  <!-- Column -->
+                  <div class="col-lg-3 col-md-12 col-12 bg-primary-light menu-img">
+                    <img src="../assets/images/web_designer.svg" alt="figma">
+                  </div>
+                  <!-- End column -->
+
+                </div>
+              </div>
+            </div>
+            <!-- End of Menu 2 Collapse Menu-->
+
+          </li>
+          <li class="nav-item dropdown" style="position: static;">
+            <a class="nav-link coming-soon" href="#" role="button" aria-disabled="true" diabled>
+              1:1 Mentorship
+              <!-- <span class="coming-soon"><fa-icon [icon]="faShopLock" class="text-warning"></fa-icon>coming soon</span> -->
+            </a>
+            <div class="dropdown-menu menu-collapse-container" aria-labelledby="navbarDropdown">
+              <div class="container-lg">
+                <div class="row py-3">
+
+                  <!-- Column -->
+                  <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-header border-0 bg-transparent">
+                        <h2 class="overall-title">Mentorship</h2>
                         <img src="../assets/images/figma.svg" alt="figma">
                       </div>
                       <div class="card-body">
@@ -335,33 +469,28 @@
               </div>
             </div>
             <!-- End of Menu 2 Collapse Menu-->
-
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
           </li>
         </ul>
         <div>
-          <ul>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <ul class="flex flex-space-between align-items-center m-0">
+            <li class="nav-item">
+              <a href="#" class="btn btn-accent inverse add-to-cart-icon" style="margin: 0;"><fa-icon [icon]="faHeart"></fa-icon></a>
+            </li>
+            <li class="nav-item">
+              <app-cart></app-cart>
+            </li>
+            <!-- <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 My Account
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
+            </li> -->
+            
           </ul>
         </div>
       </div>

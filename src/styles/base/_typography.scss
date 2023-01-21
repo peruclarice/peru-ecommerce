@@ -31,3 +31,9 @@ p {
 span {
     font-size: $span-size;
 }
+.text-accent {
+    color: $accent;
+}
+.text-primary {
+    color: $primary !important;
+}

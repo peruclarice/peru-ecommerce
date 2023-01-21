@@ -1,1 +1,91 @@
-<p>cart works!</p>
+<ng-template #content let-offcanvas>
+	<div class="add-to-cart">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title"><fa-icon [icon]="faCartPlus" class="text-primary"></fa-icon>Your Cart</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="#" class="products p-2 mb-2 bg-primary-light">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <img src="../assets/images/products/7.gif" alt="product-img">
+                    </div>
+                    <div class="col-4 p-0">
+                        <h4 class="product-title">Title of course</h4>
+                        <p class="text-success"><fa-icon [icon]="faLayerGroup"></fa-icon>Beginner</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <span>Course Cost:</span>
+                        <div class="price">40.00</div>
+                    </div>
+                    <a href="#" class="delete-product btn btn-accent">
+                        <fa-icon [icon]="faTrash"></fa-icon>
+                    </a>
+                </div>
+            </a>
+            <a href="#" class="products p-2 mb-2 bg-primary-light" *ngFor="let product of products | async">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <img src="../assets/images/products/2.jpg" alt="product-img">
+                    </div>
+                    <div class="col-4 p-0">
+                        <h4 class="product-title">{{product.title}}</h4>
+                        <p class="text-success"><fa-icon [icon]="faLayerGroup"></fa-icon>Beginner</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <span>Course Cost:</span>
+                        <div class="price">40.00</div>
+                    </div>
+                    <a href="#" class="delete-product btn btn-accent">
+                        <fa-icon [icon]="faTrash"></fa-icon>
+                    </a>
+                </div>
+            </a>
+            <div class="mt-3 mb-2 p-2">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        Your Subtotal will be:
+                    </div>
+                    <div class="col-4 text-end">
+                        <div class="price" style="font-size: 1.8em;"><b>80.00</b></div>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#removeFromCart" class="btn btn-primary w-100"><fa-icon [icon]="faCreditCard"></fa-icon>Go To Checkout</a>
+            </div>
+            <!-- <div class="text-end">
+                <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="removeFromCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-0 bg-transparent justify-content-center flex-column text-center">
+            <h5 class="modal-title" id="exampleModalLabel">
+                <span class="badge badge-sm" style="font-size: 2em;"><fa-icon [icon]="faTriangleExclamation" class="text-accent"></fa-icon></span>
+                <br> Are you sure you wish to remove this from your cart?
+            </h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button> -->
+            </div>
+            <div class="modal-body text-center">
+                <p>By saying yes, you will be removing this amazing course from you.</p>
+                <div class="row mt-3">
+                    <div class="col-md-6 col-12">
+                        <a href="#" class="btn btn-accent w-100">Cancel</a>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <a href="#" class="btn btn-primary w-100">Yes, Remove from my cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+  </div>
+</ng-template>
+<!-- <a href="#" (click)="openEnd(content)" class="btn btn-accent"><fa-icon [icon]="faCartPlus"></fa-icon> My Cart</a> -->
+<a href="#" (click)="openEnd(content)" class="btn btn-primary add-to-cart-icon"><fa-icon [icon]="faCartPlus"></fa-icon></a>
+

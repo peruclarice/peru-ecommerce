@@ -43,6 +43,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { RemoveFromCartComponent } from './components/orders/product/remove-from-cart/remove-from-cart.component';
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -93,7 +94,8 @@ export function playerFactory(): any {
     ProductContainerComponent,
     AboutMeComponent,
     JoinCommunityComponent,
-    BodyComponent
+    BodyComponent,
+    RemoveFromCartComponent
   ],
   imports: [
     BrowserModule,

@@ -29,14 +29,12 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private appstore: AngularFirestore){
     this.productsCollection = this.appstore.collection<Product>('products');
     this.products = this.productsCollection.valueChanges();
-
   }
 
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
     this.products.subscribe((data) => {
       this.productDisplay = data;
-      console.log(this.productDisplay);
     });
   }
   
