@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { ProductApiService } from 'src/app/service/network-calls/product-api.service';
 import { AngularFirestore, AngularFirestoreCollection } from "@angular/fire/compat/firestore";
+import { ActivatedRoute } from '@angular/router';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
@@ -34,9 +35,9 @@ export class ProductDetailsComponent implements OnInit {
 
   products : Observable<Product[]>;
   productsCollection: AngularFirestoreCollection<Product>;
-  productDisplay: Product[] = [];
+  productDisplay: Product | undefined;
    
-  constructor(private appstore: AngularFirestore){
+  constructor(private appstore: AngularFirestore, private route: ActivatedRoute){
     this.productsCollection = this.appstore.collection<Product>('products');
     this.products = this.productsCollection.valueChanges();
   }
@@ -44,7 +45,11 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
     this.products.subscribe((data) => {
-      this.productDisplay = data;
+      this.route.params.subscribe((params) => {
+        this.productDisplay = data.filter((product) => {
+          return product.title.toLowerCase().trim().replace(" ", "") === params['id'].title.toLowerCase().trim().replace(" ", "");
+        })[0];
+      });
     });
   }
   

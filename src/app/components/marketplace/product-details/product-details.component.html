@@ -5,7 +5,7 @@
         <div class="col-6 p-0">
           <div>
             <p>This Course is going for</p>
-            <h2 class="price">${{productDisplay[0]?.price}}</h2>
+            <h2 class="price">${{productDisplay?.price}}</h2>
             <!-- <div class="flex flex-center justify-content-start">
               <a href="#"><span class="btn btn-primary tag">NEW</span></a>
               <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
@@ -20,16 +20,16 @@
   </div>
   <div class="card border-0 p-0">
     <div class="card-header border-0 image-cover">
-      <img [src]="productDisplay[0]?.img" alt="">
+      <img [src]="productDisplay?.img" alt="">
       <div class="container" style="z-index: 2;">
         <!-- <h1>Learn the basics of Figma Design</h1> -->
-        <h1>{{productDisplay[0]?.title}}</h1>
+        <h1>{{productDisplay?.title}}</h1>
         <!-- <div class="flex flex-center justify-content-start">
           <a href="#"><span class="btn btn-primary tag">NEW</span></a>
           <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
         </div> -->
         <div>
-          <a href="#" class="btn btn-primary">Buy This Course for ${{productDisplay[0]?.price}}</a>
+          <a href="#" class="btn btn-primary">Buy This Course for ${{productDisplay?.price}}</a>
         </div>
       </div>
     </div>
@@ -41,14 +41,14 @@
         <div class="container">
           <div class="card border-0">
             <div class="card-header border-0 bg-transparent px-0">
-              <h2 class="title">{{productDisplay[0]?.title}}</h2>
+              <h2 class="title">{{productDisplay?.title}}</h2>
             </div>
             <div class="flex flex-center justify-content-start">
               <a href="#"><span class="btn btn-primary tag">NEW</span></a>
-              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>{{productDisplay[0]?.duration}}</p>
+              <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>{{productDisplay?.duration}}</p>
             </div>
             <p>
-              {{productDisplay[0]?.description}}
+              {{productDisplay?.description}}
             </p>
               <div class="card border-0 my-3">
                 <h2 class="card-tile">Meet your instructor</h2>
@@ -59,7 +59,7 @@
                 <h2 class="card-title">Course Overview</h2>
                 <div class="card-body">
                   <p>
-                    {{productDisplay[0]?.description}}
+                    {{productDisplay?.description}}
                   </p>
                 </div>
                 <div class="card border-0 my-3">
