@@ -8,12 +8,22 @@ import { Observable } from 'rxjs';
 import { ProductListComponent } from '../product-list/product-list.component';
 
 interface Product {
-  title: string
-  img: string
-  description: string
-  price: number
-  duration: string
+  title: string;
+  img: string;
+  description: string;
+  price: number;
+  duration: string;
+  summary: string;
+  // string: moduleTitles[]
+  // arr: moduleTitles[]=[]
+  // any moduleTitles: moduleTitles[]
+  [moduleTitles: string]: any;
+
 }
+
+// interface MyArray {
+//   data: Product[]
+// }
 
 @Component({
   selector: 'app-product-details',

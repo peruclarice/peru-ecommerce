@@ -41,7 +41,7 @@
         <div class="container">
           <div class="card border-0">
             <div class="card-header border-0 bg-transparent px-0">
-              <h2 class="title">Course Overview</h2>
+              <h2 class="title">{{productDisplay[0]?.title}}</h2>
             </div>
             <div class="flex flex-center justify-content-start">
               <a href="#"><span class="btn btn-primary tag">NEW</span></a>
@@ -49,10 +49,6 @@
             </div>
             <p>
               {{productDisplay[0]?.description}}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos voluptatibus sed dolore, sit ducimus necessitatibus debitis iure, dolorum facilis similique? Labore soluta suscipit debitis tempora ullam. Porro minima repellat ea doloribus ut nulla, possimus repellendus optio nobis excepturi amet obcaecati non.
             </p>
               <div class="card border-0 my-3">
                 <h2 class="card-tile">Meet your instructor</h2>
@@ -64,10 +60,6 @@
                 <div class="card-body">
                   <p>
                     {{productDisplay[0]?.description}}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea minus laborum voluptatem. Aut, accusantium adipisci deleniti sed repudiandae distinctio nemo, veritatis aperiam eligendi similique ipsam dolore voluptate iusto officiis recusandae earum.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos voluptatibus sed dolore, sit ducimus necessitatibus debitis iure, dolorum facilis similique? Labore soluta suscipit debitis tempora ullam. Porro minima repellat ea doloribus ut nulla, possimus repellendus optio nobis excepturi amet obcaecati non.
                   </p>
                 </div>
                 <div class="card border-0 my-3">
@@ -93,50 +85,15 @@
     
                         <ngb-panel title="Experienced designers">
                         <ng-template ngbPanelContent>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                            heard of them accusamus labore sustainable VHS.
+                          This design course is suitable for both junior and senior designers looking to improve their skills and learn more about design. Junior designers will benefit from the course by learning the basics of design, user experience (UX) principles, and how to use design tools like Figma and Sketch. Senior designers will benefit by learning advanced techniques, best practices and staying up to date with the latest design trends and technologies. The course is designed to cater to different skill levels, from beginners to advanced, and the content is tailored to help junior and senior designers achieve their goals, whether it's to create a portfolio, improve their skills or advance in their career. This course will give both junior and senior designers the knowledge and skills they need to create visually appealing, user-friendly designs and make an impact in the design industry.
                         </ng-template>
                         </ngb-panel>
     
                         <ngb-panel title="Challenge driven individuals">
                           <ng-template ngbPanelContent>
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                              moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                              vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                              heard of them accusamus labore sustainable VHS.
+                            This design course is suitable for anyone interested in learning more about design, whether you are an aspiring designer, a professional designer looking to improve your skills, or someone who wants to understand the design process better. It is also suitable for people who want to learn how to use Figma, Sketch or other design tools. The course is designed to cater to different skill levels, from beginners to advanced, and the content is tailored to help you achieve your goals, whether it's to create a portfolio, improve your skills or advance in your career. This course will give you the knowledge and skills you need to create visually appealing, user-friendly designs and make an impact in the design industry.
                           </ng-template>
                           </ngb-panel>
-    
-                        <!-- <ngb-panel>
-                        <ng-template ngbPanelTitle>
-                            <span>&#9733; <b>Fancy</b> title &#9733;</span>
-                        </ng-template>
-                        <ng-template ngbPanelContent>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                            heard of them accusamus labore sustainable VHS.
-                        </ng-template>
-                        </ngb-panel>
-    
-                        <ngb-panel title="Disabled" [disabled]="true">
-                        <ng-template ngbPanelContent>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                            heard of them accusamus labore sustainable VHS.
-                        </ng-template>
-                        </ngb-panel> -->
     
                     </ngb-accordion>
                     </div>
@@ -148,9 +105,9 @@
                   </div>
                   <div class="card-body">
                     <ul class="ul-numbers">
-                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span> Improved design skills: By taking this course, you will learn the latest design techniques, principles, and best practices, which will help you improve your design skills and create visually appealing and user-friendly designs.</li>
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Increased employability: The knowledge and skills you acquire through this course will make you more competitive in the job market and increase your employability.</li>
+                      <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Professional development: This course will help you stay up to date with the latest design trends and technologies, which will enable you to advance in your career and achieve your professional goals.</li>
                     </ul>
                   </div>
                 </div>
