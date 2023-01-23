@@ -48,6 +48,7 @@ import { CollectionOneComponent } from './components/marketplace/product-collect
 import { CollectionTwoComponent } from './components/marketplace/product-collections/collection-two/collection-two.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { JoinAnimationComponent } from './shared/join-animation/join-animation.component';
+import { CtaAnimationComponent } from './shared/cta-animation/cta-animation.component';
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -103,7 +104,8 @@ export function playerFactory(): any {
     CollectionOneComponent,
     CollectionTwoComponent,
     PagenotfoundComponent,
-    JoinAnimationComponent
+    JoinAnimationComponent,
+    CtaAnimationComponent
   ],
   imports: [
     BrowserModule,

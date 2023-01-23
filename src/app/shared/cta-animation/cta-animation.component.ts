@@ -3,15 +3,15 @@ import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
-  selector: 'app-join-animation',
-  templateUrl: './join-animation.component.html',
-  styleUrls: ['./join-animation.component.scss']
+  selector: 'app-cta-animation',
+  templateUrl: './cta-animation.component.html',
+  styleUrls: ['./cta-animation.component.scss']
 })
-export class JoinAnimationComponent {
+export class CtaAnimationComponent {
 
   // This is the option that uses the package's AnimationOption interface  
-  options: AnimationOptions = {    
-    path: '/assets/lottie/join-chat.json'   
+  options: AnimationOptions = {     
+    path: '/assets/lottie/cta-animation.json'  
   };  
 
   constructor() { }  
