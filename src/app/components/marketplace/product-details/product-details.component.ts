@@ -46,9 +46,8 @@ export class ProductDetailsComponent implements OnInit {
     // throw new Error('Method not implemented.');
     this.products.subscribe((data) => {
       this.route.params.subscribe((params) => {
-        this.productDisplay = data.filter((product) => {
-          return product.title.toLowerCase().trim().replace(" ", "") === params['id'].title.toLowerCase().trim().replace(" ", "");
-        })[0];
+      
+        this.productDisplay = data.filter(product => product.title === params['id'])[0];
       });
     });
   }

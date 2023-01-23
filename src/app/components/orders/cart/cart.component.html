@@ -5,7 +5,7 @@
             <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
         </div>
         <div class="offcanvas-body">
-            <a href="#" class="products p-2 mb-2 bg-primary-light">
+            <!-- <a href="#" class="products p-2 mb-2 bg-primary-light">
                 <div class="row align-items-center">
                     <div class="col-4">
                         <img src="../assets/images/products/7.gif" alt="product-img">
@@ -22,11 +22,11 @@
                         <fa-icon [icon]="faTrash"></fa-icon>
                     </a>
                 </div>
-            </a>
+            </a> -->
             <a href="#" class="products p-2 mb-2 bg-primary-light" *ngFor="let product of products | async">
                 <div class="row align-items-center">
                     <div class="col-4">
-                        <img src="../assets/images/products/2.jpg" alt="product-img">
+                        <img src="{{ product?.img }}" alt="product-img">
                     </div>
                     <div class="col-4 p-0">
                         <h4 class="product-title">{{product.title}}</h4>

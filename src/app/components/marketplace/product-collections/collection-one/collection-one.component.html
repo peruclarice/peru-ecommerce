@@ -2,7 +2,7 @@
     <div class="col-lg-4 col-md-6 col-sm-12 my-2" *ngFor="let product of products | async">
         <div class="card product-card b-0">
           <div class="card-header">
-            <img class="card-image" src="../assets/images/products/7.gif" alt="product-thumbnail">
+        <img class="card-image" src="{{ product?.img }}" alt="product-thumbnail">
           </div>
           <div class="card-body">
             <h2 class="card-title">{{product?.title}}</h2>
@@ -24,7 +24,7 @@
       </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card product-card b-0">
           <div class="card-header">
             <img class="card-image" src="../assets/images/products/2.jpg" alt="product-thumbnail">
@@ -75,7 +75,7 @@
             <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
           </div>
         </div>
-      </div>
+      </div> -->
 </div>
 
 

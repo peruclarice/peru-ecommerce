@@ -46,6 +46,8 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { RemoveFromCartComponent } from './components/orders/product/remove-from-cart/remove-from-cart.component';
 import { CollectionOneComponent } from './components/marketplace/product-collections/collection-one/collection-one.component';
 import { CollectionTwoComponent } from './components/marketplace/product-collections/collection-two/collection-two.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { JoinAnimationComponent } from './shared/join-animation/join-animation.component';
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -99,7 +101,9 @@ export function playerFactory(): any {
     BodyComponent,
     RemoveFromCartComponent,
     CollectionOneComponent,
-    CollectionTwoComponent
+    CollectionTwoComponent,
+    PagenotfoundComponent,
+    JoinAnimationComponent
   ],
   imports: [
     BrowserModule,

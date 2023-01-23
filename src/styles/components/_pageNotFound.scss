@@ -1,0 +1,19 @@
+.page-not-found-error {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    .lottie-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: $cta-size;
+    }
+    .content {
+        font-size: $subheading-size;
+    }
+}

@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { BodyComponent } from './components/body/body.component';
 import { ProductDetailsComponent } from './components/marketplace/product-details/product-details.component';
 import { ProductListComponent } from './components/marketplace/product-list/product-list.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
     {path: '', component: BodyComponent},
     {path: 'products', component: ProductListComponent},
-    {path: 'products/:id', component: ProductDetailsComponent}
+    {path: 'products/:id', component: ProductDetailsComponent},
+
+    // Wild card 404 route
+    {path: '**', component: PagenotfoundComponent},
 ];
 
 @NgModule({
