@@ -3,8 +3,9 @@
 .product-card {
     overflow: hidden;
     padding: 0;
-    // box-shadow: $primary-shadow;
-    @include primary-box-shadow($primary-shadow);
+    height: 100%;
+    box-shadow: $primary-shadow;
+    // @include primary-box-shadow($primary-shadow);
     .card-header {
         border: 0;
         padding: 0;

@@ -431,6 +431,20 @@ i, span, svg, .fas, .fa fa-icon {
     }
 }
 
+.back-to-top {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    padding: 0;
+    z-index: 100;
+}
+
 // .add-shadow {
 //     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
 // }

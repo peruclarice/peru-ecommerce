@@ -5,6 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -18,4 +19,5 @@ export class FooterComponent {
   faFacebookF = faFacebookF;
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
+  faTwitter = faTwitter;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'peru-ecommerce';
   faCoffee = faCoffee;
+  faArrowUp = faArrowUp;
 
   // constructor(private dialog: MatDialog, private store: AngularFirestore) {}
 }
