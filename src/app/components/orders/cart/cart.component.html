@@ -1,8 +1,8 @@
-<ng-template #content let-offcanvas>
+<!-- <ng-template #content let-offcanvas>  -->
 	<div class="add-to-cart">
         <div class="offcanvas-header">
             <h4 class="offcanvas-title"><fa-icon [icon]="faCartPlus" class="text-primary"></fa-icon>Your Cart</h4>
-            <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+            <button type="button" class="btn-close" aria-label="Close" ></button>
         </div>
         <div class="offcanvas-body">
             <!-- <a href="#" class="products p-2 mb-2 bg-primary-light">
@@ -36,7 +36,7 @@
                         <span>Course Cost:</span>
                         <div class="price">40.00</div>
                     </div>
-                    <a href="#" class="delete-product btn btn-accent">
+                    <a href="#removeFromCart" data-bs-toggle="modal" class="delete-product btn btn-accent">
                         <fa-icon [icon]="faTrash"></fa-icon>
                     </a>
                 </div>
@@ -55,11 +55,11 @@
                 </div>
             </div>
             <hr>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#removeFromCart" class="btn btn-primary w-100"><fa-icon [icon]="faCreditCard"></fa-icon>Go To Checkout</a>
+            <a href="#" class="btn btn-primary w-100"><fa-icon [icon]="faCreditCard"></fa-icon>Go To Checkout</a>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="removeFromCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="removeFromCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow: hidden;">
         <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header border-0 bg-transparent justify-content-center flex-column text-center">
@@ -85,7 +85,6 @@
         </div>
         </div>
   </div>
-</ng-template>
-<!-- <a href="#" (click)="openEnd(content)" class="btn btn-accent"><fa-icon [icon]="faCartPlus"></fa-icon> My Cart</a> -->
-<button (click)="openEnd(content)" class="btn btn-primary add-to-cart-icon"><fa-icon [icon]="faCartPlus"></fa-icon></button>
+<!-- </ng-template> -->
+<!--<button (click)="openEnd(content)" class="btn btn-primary add-to-cart-icon"><fa-icon [icon]="faCartPlus"></fa-icon></button> -->
 

@@ -7,6 +7,7 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
+import { CollectionTwoComponent } from '../../marketplace/product-collections/collection-two/collection-two.component';
 
 interface Product {
   title: string
@@ -33,9 +34,10 @@ export class CartComponent implements OnInit {
 
   closeResult: string | undefined;
 
-  constructor(private offcanvasService: NgbOffcanvas, appstore: AngularFirestore) {
+  constructor(private offcanvasService: NgbOffcanvas, appstore: AngularFirestore, collectionTwoComponent: CollectionTwoComponent) {
     this.productsCollection = appstore.collection<Product>('products');
     this.products = this.productsCollection.valueChanges();
+	
   }
 
   openEnd(content: TemplateRef<any>) {
@@ -81,11 +83,13 @@ export class CartComponent implements OnInit {
   products : Observable<Product[]>;
   productsCollection: AngularFirestoreCollection<Product>;
 
-  // constructor(appstore: AngularFirestore) {
-    
-  // }
+  quantity = 2;
+  itemsInCartCount = 1;
+
   ngOnInit(): void {
-      
+      const cartItem = JSON.parse(localStorage.getItem('cartItem') || '');
+	// const cartItem = JSON.parse(localStorage.getItem('cartItem')!);
+	  console.log('got this value', cartItem.quantity);
   }
 
 }

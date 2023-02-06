@@ -15,6 +15,7 @@ interface Product {
   price: number;
   duration: string;
   summary: string;
+  url: string
   // string: moduleTitles[]
   // arr: moduleTitles[]=[]
   // any moduleTitles: moduleTitles[]

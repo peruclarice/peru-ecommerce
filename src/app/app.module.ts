@@ -28,7 +28,7 @@ import { ProductContainerComponent } from './components/marketplace/product-cont
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { JoinCommunityComponent } from './components/join-community/join-community.component';
 import { BodyComponent } from './components/body/body.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -49,6 +49,8 @@ import { CollectionTwoComponent } from './components/marketplace/product-collect
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { JoinAnimationComponent } from './shared/join-animation/join-animation.component';
 import { CtaAnimationComponent } from './shared/cta-animation/cta-animation.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductDetailsTwoComponent } from './components/marketplace/product-details-two/product-details-two.component';
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -105,7 +107,9 @@ export function playerFactory(): any {
     CollectionTwoComponent,
     PagenotfoundComponent,
     JoinAnimationComponent,
-    CtaAnimationComponent
+    CtaAnimationComponent,
+    HomeComponent,
+    ProductDetailsTwoComponent
   ],
   imports: [
     BrowserModule,
@@ -127,7 +131,8 @@ export function playerFactory(): any {
     provideRemoteConfig(() => getRemoteConfig()),
     provideStorage(() => getStorage()),
     // AngularFireModule.initializeApp(environment.firebase),
-    // AngularFirestoreModule
+    // AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   providers: [
     ScreenTrackingService,UserTrackingService,

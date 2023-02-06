@@ -19,7 +19,10 @@
             </div>
           </div>
           <div class="card-footer">
-            <a [routerLink]="['/products', product?.title]" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a>
+            <a [routerLink]="['/ui-ux-products', product?.title]" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course Title</a>
+            <!-- <button (click)="onAddToCart(product)" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course Product</button> -->
+            <!-- <button (click)="{{product.url}}" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course Product url</button> -->
+            <!-- <a href="{{product.url}}" target="_blank" class="btn btn-primary"><i class="fas fa-plus"></i>Get This Course</a> -->
           </div>
       </div>
       </div>

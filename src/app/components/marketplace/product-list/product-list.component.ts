@@ -43,6 +43,9 @@ export class ProductListComponent implements OnInit {
     this.productsCollection = appstore.collection<Product>('products');
     this.products = this.productsCollection.valueChanges();
   }
+  onAddToCart(){
+    
+  }
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
   }

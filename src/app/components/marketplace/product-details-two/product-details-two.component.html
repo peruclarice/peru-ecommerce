@@ -1,0 +1,124 @@
+<section class="product-detail-container p-0">
+    <div class="enroll-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 p-0">
+            <div>
+              <p>This Course is going for</p>
+              <h2 class="price">${{productDisplay?.price}}</h2>
+              <!-- <div class="flex flex-center justify-content-start">
+                <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+                <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-6 p-0">
+            <!-- <a href="https://paystack.com/buy/course-1-wazehf" class="btn btn-accent w-100">Buy This Course</a> -->
+            <a href="{{productDisplay?.url}}" class="btn btn-accent w-100" target="_blank">Buy This Course</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border-0 p-0">
+      <div class="card-header border-0 image-cover">
+        <img [src]="productDisplay?.img" alt="">
+        <div class="container" style="z-index: 2;">
+          <!-- <h1>Learn the basics of Figma Design</h1> -->
+          <h1>{{productDisplay?.title}}</h1>
+          <!-- <div class="flex flex-center justify-content-start">
+            <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+            <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>4 WEEKS</p>
+          </div> -->
+          <div>
+            <a href="{{productDisplay?.url}}" class="btn btn-primary" target="_blank">Buy This Course for ${{productDisplay?.price}}</a>
+          </div> 
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <!-- <div class="image-cover">
+          <img src="../assets/images/products/3.jpg" alt="image-cover">
+        </div> -->
+        <section class="product-detail-content">
+          <div class="container">
+            <div class="card border-0">
+              <div class="card-header border-0 bg-transparent px-0">
+                <h2 class="title">{{productDisplay?.title}}</h2>
+              </div>
+              <div class="flex flex-center justify-content-start">
+                <a href="#"><span class="btn btn-primary tag">NEW</span></a>
+                <p class="ml-3"><fa-icon [icon]="faClock"></fa-icon>{{productDisplay?.duration}}</p>
+              </div>
+              <p>
+                {{productDisplay?.description}}
+              </p>
+                <div class="card border-0 my-3">
+                  <h2 class="card-tile">Meet your instructor</h2>
+                  <img src="../assets/images/profile_pic.jpg" alt="" class="hosted-by-img">
+                  <p>Hosted By: <b>Clarice Peru</b></p>
+                </div>
+                <div class="card border-0 my-3">
+                  <h2 class="card-title">Course Overview</h2>
+                  <div class="card-body">
+                    <p>
+                      {{productDisplay?.description}}
+                    </p>
+                  </div>
+                  <div class="card border-0 my-3">
+                    <div class="card-header border-0 bg-transparent">
+                      <h2 class="card-title">Modules in this course</h2>
+                    </div>
+                    <div class="card-body">
+                      <ul class="ul-numbers">
+                        <li><span class="numbers">01</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li><span class="numbers">02</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li><span class="numbers">03</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                  <div class="card border-0 my-3">
+                    <div class="card-header border-0 bg-transparent">
+                      <h2 class="card-title">Who is this course for ?</h2>
+                    </div>
+                    <div class="card-body">
+                      <div class="product-detail-accordion my-3">
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+      
+                          <ngb-panel title="Experienced designers">
+                          <ng-template ngbPanelContent>
+                            This design course is suitable for both junior and senior designers looking to improve their skills and learn more about design. Junior designers will benefit from the course by learning the basics of design, user experience (UX) principles, and how to use design tools like Figma and Sketch. Senior designers will benefit by learning advanced techniques, best practices and staying up to date with the latest design trends and technologies. The course is designed to cater to different skill levels, from beginners to advanced, and the content is tailored to help junior and senior designers achieve their goals, whether it's to create a portfolio, improve their skills or advance in their career. This course will give both junior and senior designers the knowledge and skills they need to create visually appealing, user-friendly designs and make an impact in the design industry.
+                          </ng-template>
+                          </ngb-panel>
+      
+                          <ngb-panel title="Challenge driven individuals">
+                            <ng-template ngbPanelContent>
+                              This design course is suitable for anyone interested in learning more about design, whether you are an aspiring designer, a professional designer looking to improve your skills, or someone who wants to understand the design process better. It is also suitable for people who want to learn how to use Figma, Sketch or other design tools. The course is designed to cater to different skill levels, from beginners to advanced, and the content is tailored to help you achieve your goals, whether it's to create a portfolio, improve your skills or advance in your career. This course will give you the knowledge and skills you need to create visually appealing, user-friendly designs and make an impact in the design industry.
+                            </ng-template>
+                            </ngb-panel>
+      
+                      </ngb-accordion>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-0 my-3">
+                    <div class="card-header border-0 bg-transparent">
+                      <h2 class="card-title">What you'll get from this</h2>
+                    </div>
+                    <div class="card-body">
+                      <ul class="ul-numbers">
+                        <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span> Improved design skills: By taking this course, you will learn the latest design techniques, principles, and best practices, which will help you improve your design skills and create visually appealing and user-friendly designs.</li>
+                        <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Increased employability: The knowledge and skills you acquire through this course will make you more competitive in the job market and increase your employability.</li>
+                        <li><span class="badges"><fa-icon [icon]="faMedal"></fa-icon></span>Professional development: This course will help you stay up to date with the latest design trends and technologies, which will enable you to advance in your career and achieve your professional goals.</li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+      <!-- Join the community -->
+    <app-join-community></app-join-community>
+  </section>
+  

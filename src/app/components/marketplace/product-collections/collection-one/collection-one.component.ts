@@ -8,6 +8,7 @@ interface Product {
   description: string
   price: number
   duration: string
+  url: string
 }
 
 @Component({
