@@ -1,0 +1,35 @@
+<section class="text-center">
+    <div class="container">
+        <h2 class="fw-semibold">Happy Clients, Happy Life</h2>
+        <p>What my clients said about my work ethic</p>
+        <div class="slider-container">
+            <button class="arrow left-arrow" (click)="prevSlide()">&#8249;</button>
+            <div class="slider-wrapper" #sliderWrapper>
+
+                <div class="slide text-center">
+                    <img src="/assets/images/testimonials/kevin.jfif" alt="Client 1" class="mb-2">
+                    <h4>Kevin</h4>
+                    <p>CEO, QXP</p>
+                    <div class="my-3">
+                        <p>
+                            “Lorem ipsum dolor sit amet consectetur. Nunc dolor vel ac enim viverra morbi malesuada. Vitae arcu diam ipsum convallis semper lobortis cras elementum.”
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide text-center">
+                    <img src="/src/assets/images/testimonials/lucy.png" alt="Slide 1" class="mb-2">
+                    <h4>Lucy</h4>
+                    <p>CEO, Shared Values</p>
+                    <div class="my-3">
+                        <p>
+                            “Lorem ipsum dolor sit amet consectetur. Nunc dolor vel ac enim viverra morbi malesuada. Vitae arcu diam ipsum convallis semper lobortis cras elementum.”
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="arrow right-arrow" (click)="nextSlide()">&#8250;</button>
+        </div>
+    </div>
+</section>

@@ -11,6 +11,14 @@ header {
         background: $background;
         z-index: 999;
     }
+    &.header-absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+        z-index: 999;
+    }
     .navbar {
         height: 100%;
         width: 100%;

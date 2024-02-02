@@ -52,6 +52,8 @@ import { CtaAnimationComponent } from './shared/cta-animation/cta-animation.comp
 import { HomeComponent } from './components/home/home.component';
 import { ProductDetailsTwoComponent } from './components/marketplace/product-details-two/product-details-two.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { TestimonialSliderComponent } from './components/testimonial-slider/testimonial-slider.component';
+import { QxpComponent } from './pages/qxp/qxp.component';
 // import { FadeInAnimationDirective } from './directives/gsap/fade-in-animation.directive';
 
 // Import the functions you need from the SDKs you need
@@ -113,6 +115,8 @@ export function playerFactory(): any {
     HomeComponent,
     ProductDetailsTwoComponent,
     PortfolioComponent,
+    TestimonialSliderComponent,
+    QxpComponent,
     // FadeInAnimationDirective,
   ],
   imports: [

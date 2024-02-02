@@ -29,8 +29,10 @@ img {
 }
 
 .hero-section {
-    min-height: 85vh;
+    // min-height: 85vh;
+    height: 100vh;
     padding: 1em 0;
+    padding-top: 15vh;
     .cta {
         p {
             font-size: 1.3em;
@@ -452,6 +454,9 @@ i, span, svg, .fas, .fa fa-icon {
 
 // Portfolio
 .portfolio-hero {
+    .profile-pic {
+        display: none;
+    }
     .clients {
         margin-top: 3em;
         img {
@@ -464,10 +469,13 @@ i, span, svg, .fas, .fa fa-icon {
 
 .case-study {
     .title {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .subtitle {
         font-size: 1.25em;
+    }
+    h4 {
+        font-size: 1.5em;
     }
     .grid-container {
         display: grid;
@@ -476,6 +484,40 @@ i, span, svg, .fas, .fa fa-icon {
         row-gap: 50px;
         width: 100%;
         margin: 0 auto;
+
+        .card {
+            border-radius: 0;
+            padding: 0;
+            height: 100%;
+            .card-header {
+                padding: 0;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .card-body {
+                padding-bottom: 3em;
+                .row {
+                    gap: .5em;
+                }
+                span {
+                    padding: 1em;
+                    margin: 0;
+                    background-color: #f0f0f0;
+                    border-radius: 32px;
+                    text-align: center;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: auto;
+                    max-width: 180px;
+                }
+            }
+        }
+
     }
 
     .grid-item {
@@ -502,38 +544,29 @@ i, span, svg, .fas, .fa fa-icon {
             }
         }
     }
-    .card {
-        border-radius: 0;
-        padding: 0;
-        height: 100%;
-        .card-header {
-            padding: 0;
-            height: auto;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-        .card-body {
-            padding-bottom: 3em;
-            .row {
-                gap: .5em;
-            }
-            span {
-                padding: 1em;
-                margin: 0;
-                background-color: #f0f0f0;
-                border-radius: 32px;
-                text-align: center;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-                max-width: 180px;
-            }
-        }
+}
+
+.ellipsis {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(100px);
+    background-image: linear-gradient(90deg, rgb(128, 255, 253), rgb(128, 130, 255));
+    &.ellipsis-left {
+        top: -100px;
+        left: -100px;
     }
+    &.ellipsis-right {
+        transform: rotate(180deg);
+        bottom: -100px;
+        right: -100px;
+    }
+}
+.tools-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0 .5em;
 }
 
 // Import responsive style (DO NOT REMOVE)

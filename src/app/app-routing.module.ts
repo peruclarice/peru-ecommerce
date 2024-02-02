@@ -13,6 +13,7 @@ import { CheckoutPaymentComponent } from './components/transactions/checkout-pay
 import { AuthGuard } from './guards/auth.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { QxpComponent } from './pages/qxp/qxp.component';
 
 const routes: Routes = [
     
@@ -28,7 +29,8 @@ const routes: Routes = [
         {path: 'login', component:LoginComponent},
         {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
         {path: 'gsap-test', component: CheckoutPaymentComponent},
-        {path: 'portfolio', component: PortfolioComponent}
+        {path: 'portfolio', component: PortfolioComponent},
+        {path: 'qxp-case-study', component: QxpComponent}
     ]},
 
     {path: 'cart', component: CartComponent},
