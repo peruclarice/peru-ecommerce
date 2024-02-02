@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FadeInAnimationDirective } from 'src/app/directives/gsap/fade-in-animation.directive';
 
 @Component({
   selector: 'app-checkout-payment',

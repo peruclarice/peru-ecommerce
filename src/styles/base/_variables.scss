@@ -29,8 +29,8 @@ $font-family: 'Figtree';
 // Font-size
 $body-size: 14px;
 $cta-size: 4em;
-$heading-size: 2.5em;
-$subheading-size: 1.5em;
+$heading-size: 3.5em;
+$subheading-size: 2.5em;
 $p-size: 1em;
 $span-size: .9em;
 
@@ -69,3 +69,6 @@ $success-shadow-hover: rgb(53, 213, 89, 0.3) $shadow-spread;
 $warning-shadow-hover: rgb(235, 192, 0, 0.3) $shadow-spread;
 $danger-shadow-hover: rgb(255, 88, 88, 0.3) $shadow-spread;
 $accent-shadow-hover: rgb(199, 20, 0, 0.2) $shadow-spread;
+
+$primary-opacity: rgba(0, 133, 255, 0.30);
+$accent-opacity: rgb(199, 20, 0, 0.2);

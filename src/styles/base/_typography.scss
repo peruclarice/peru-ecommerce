@@ -37,3 +37,19 @@ span {
 .text-primary {
     color: $primary !important;
 }
+
+.fw-regular {
+    font-weight: $regular;
+}
+.fw-medium {
+    font-weight: $medium;
+}
+.fw-semibold {
+    font-weight: $semibold;
+}
+.fw-bold {
+    font-weight: $bold;
+}
+.fw-extra-bold {
+    font-weight: $extra-bold;
+}

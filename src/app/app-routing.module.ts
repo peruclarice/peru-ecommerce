@@ -9,8 +9,10 @@ import { ProductDetailsComponent } from './components/marketplace/product-detail
 import { ProductListComponent } from './components/marketplace/product-list/product-list.component';
 import { CartComponent } from './components/orders/cart/cart.component';
 import { OrderHistoryComponent } from './components/orders/order-history/order-history.component';
+import { CheckoutPaymentComponent } from './components/transactions/checkout-payment/checkout-payment.component';
 import { AuthGuard } from './guards/auth.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
     
@@ -25,6 +27,8 @@ const routes: Routes = [
         {path: 'ui', component: ProductDetailsTwoComponent},
         {path: 'login', component:LoginComponent},
         {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
+        {path: 'gsap-test', component: CheckoutPaymentComponent},
+        {path: 'portfolio', component: PortfolioComponent}
     ]},
 
     {path: 'cart', component: CartComponent},

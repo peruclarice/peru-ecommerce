@@ -47,6 +47,7 @@ img {
         }
         .multi-color {
             font-weight: inherit;
+            font-size: inherit;
             position: relative;
             span {
                 font-size: inherit;
@@ -449,7 +450,91 @@ i, span, svg, .fas, .fa fa-icon {
 //     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
 // }
 
+// Portfolio
+.portfolio-hero {
+    .clients {
+        margin-top: 3em;
+        img {
+            width: auto;
+            max-width: 110px;
+            object-fit: contain;
+        }
+    }
+}
 
+.case-study {
+    .title {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 1.25em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; /* Creates two rows that adjust to their content's size */
+        row-gap: 50px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-// Immport responsive style (DO NOT REMOVE)
+    .grid-item {
+        background-color: $white;
+        text-decoration: none;
+        color: initial;
+        position: relative;
+        overflow: hidden;
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-color: $primary-opacity;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: -600px;
+            transition: all .5s ease-in-out;
+        }
+        &:hover {
+            .overlay {
+                left: 0;
+            }
+        }
+    }
+    .card {
+        border-radius: 0;
+        padding: 0;
+        height: 100%;
+        .card-header {
+            padding: 0;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .card-body {
+            padding-bottom: 3em;
+            .row {
+                gap: .5em;
+            }
+            span {
+                padding: 1em;
+                margin: 0;
+                background-color: #f0f0f0;
+                border-radius: 32px;
+                text-align: center;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                max-width: 180px;
+            }
+        }
+    }
+}
+
+// Import responsive style (DO NOT REMOVE)
 @import 'responsive';

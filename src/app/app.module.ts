@@ -51,6 +51,8 @@ import { JoinAnimationComponent } from './shared/join-animation/join-animation.c
 import { CtaAnimationComponent } from './shared/cta-animation/cta-animation.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductDetailsTwoComponent } from './components/marketplace/product-details-two/product-details-two.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+// import { FadeInAnimationDirective } from './directives/gsap/fade-in-animation.directive';
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -109,7 +111,9 @@ export function playerFactory(): any {
     JoinAnimationComponent,
     CtaAnimationComponent,
     HomeComponent,
-    ProductDetailsTwoComponent
+    ProductDetailsTwoComponent,
+    PortfolioComponent,
+    // FadeInAnimationDirective,
   ],
   imports: [
     BrowserModule,

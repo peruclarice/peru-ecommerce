@@ -37,6 +37,19 @@
             display: block;
         }
     }
+    .case-study {
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: $xl) {
+    .case-study {
+        .grid-container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
 
 // Screen width 1200px
