@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class QxpComponent {
 
+  scrollToElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
+
 }

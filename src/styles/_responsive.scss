@@ -47,6 +47,9 @@
             display: block;
         }
     }
+    .remove-on-small-screens {
+        display: block;
+    }
 }
 
 @media screen and (min-width: $xl) {
