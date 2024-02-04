@@ -14,6 +14,14 @@ import { AuthGuard } from './guards/auth.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { QxpComponent } from './pages/qxp/qxp.component';
+import { NollaBankComponent } from './pages/nolla-bank/nolla-bank.component';
+import { SagebriefComponent } from './pages/sagebrief/sagebrief.component';
+import { ElixrComponent } from './pages/elixr/elixr.component';
+import { PymComponent } from './pages/pym/pym.component';
+import { RegwandComponent } from './pages/regwand/regwand.component';
+import { IpheroComponent } from './pages/iphero/iphero.component';
+import { TrotroDiariesComponent } from './pages/trotro-diaries/trotro-diaries.component';
+import { VertexPayComponent } from './pages/vertex-pay/vertex-pay.component';
 
 const routes: Routes = [
     
@@ -30,12 +38,19 @@ const routes: Routes = [
         {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
         {path: 'gsap-test', component: CheckoutPaymentComponent},
         {path: 'portfolio', component: PortfolioComponent},
-        {path: 'qxp-case-study', component: QxpComponent}
+        {path: 'qxp-case-study', component: QxpComponent},
+        {path: 'nolla-bank-case-study', component: NollaBankComponent},
+        {path: 'sagebrief', component:SagebriefComponent},
+        {path: 'elixr', component: ElixrComponent},
+        {path: 'pym', component: PymComponent},
+        {path: 'regwand', component: RegwandComponent},
+        {path: 'iphero', component: IpheroComponent},
+        {path: 'trotro-diaries', component: TrotroDiariesComponent},
+        {path: 'vertex-pay', component: VertexPayComponent}
     ]},
 
     {path: 'cart', component: CartComponent},
 
-    // {path: '/not-found', component: PagenotfoundComponent},
     // Wild card 404 route
     {path: '**', component: PagenotfoundComponent},
 ];

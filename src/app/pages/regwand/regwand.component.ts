@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-regwand',
+  templateUrl: './regwand.component.html',
+  styleUrls: ['./regwand.component.scss']
 })
-export class HomeComponent {
-  faArrowUp = faArrowUp;
-
+export class RegwandComponent {
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  
+
 }

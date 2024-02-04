@@ -54,6 +54,15 @@ import { ProductDetailsTwoComponent } from './components/marketplace/product-det
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { TestimonialSliderComponent } from './components/testimonial-slider/testimonial-slider.component';
 import { QxpComponent } from './pages/qxp/qxp.component';
+import { NollaBankComponent } from './pages/nolla-bank/nolla-bank.component';
+import { SagebriefComponent } from './pages/sagebrief/sagebrief.component';
+import { ElixrComponent } from './pages/elixr/elixr.component';
+import { PymComponent } from './pages/pym/pym.component';
+import { RegwandComponent } from './pages/regwand/regwand.component';
+import { IpheroComponent } from './pages/iphero/iphero.component';
+import { TrotroDiariesComponent } from './pages/trotro-diaries/trotro-diaries.component';
+import { VertexPayComponent } from './pages/vertex-pay/vertex-pay.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 // import { FadeInAnimationDirective } from './directives/gsap/fade-in-animation.directive';
 
 // Import the functions you need from the SDKs you need
@@ -117,6 +126,15 @@ export function playerFactory(): any {
     PortfolioComponent,
     TestimonialSliderComponent,
     QxpComponent,
+    NollaBankComponent,
+    SagebriefComponent,
+    ElixrComponent,
+    PymComponent,
+    RegwandComponent,
+    IpheroComponent,
+    TrotroDiariesComponent,
+    VertexPayComponent,
+    ContactMeComponent,
     // FadeInAnimationDirective,
   ],
   imports: [
