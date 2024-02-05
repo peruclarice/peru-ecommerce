@@ -5,6 +5,7 @@ import { faShopLock } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from '../../orders/cart/cart.component';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -17,6 +18,7 @@ faHeart = faHeart;
 faLock = faLock;
 faShopLock = faShopLock;
 faCartPlus = faCartPlus;
+faLinkedIn = faLinkedin;
 // offcanvasService: any;
 
 constructor(

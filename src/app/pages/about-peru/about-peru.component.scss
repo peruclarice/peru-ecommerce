@@ -1,0 +1,20 @@
+.case-study {
+    .grid-container {
+        gap: 2em;
+    }
+    .grid-item {
+        padding: 2em;
+        overflow: unset;
+        height: auto;
+        max-height: none;
+        img {
+            margin-bottom: 1em;
+            height: 100%;
+            max-height: 350px;
+            object-fit: contain;
+        }
+        h3 {
+            font-weight: 600;
+        }
+    }
+}

@@ -22,6 +22,7 @@ import { RegwandComponent } from './pages/regwand/regwand.component';
 import { IpheroComponent } from './pages/iphero/iphero.component';
 import { TrotroDiariesComponent } from './pages/trotro-diaries/trotro-diaries.component';
 import { VertexPayComponent } from './pages/vertex-pay/vertex-pay.component';
+import { AboutPeruComponent } from './pages/about-peru/about-peru.component';
 
 const routes: Routes = [
     
@@ -46,7 +47,8 @@ const routes: Routes = [
         {path: 'regwand', component: RegwandComponent},
         {path: 'iphero', component: IpheroComponent},
         {path: 'trotro-diaries', component: TrotroDiariesComponent},
-        {path: 'vertex-pay', component: VertexPayComponent}
+        {path: 'vertex-pay', component: VertexPayComponent},
+        {path: 'about-me', component: AboutPeruComponent}
     ]},
 
     {path: 'cart', component: CartComponent},

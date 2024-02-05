@@ -63,6 +63,8 @@ import { IpheroComponent } from './pages/iphero/iphero.component';
 import { TrotroDiariesComponent } from './pages/trotro-diaries/trotro-diaries.component';
 import { VertexPayComponent } from './pages/vertex-pay/vertex-pay.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { PeruVideoAboutMeComponent } from './components/peru-video-about-me/peru-video-about-me.component';
+import { AboutPeruComponent } from './pages/about-peru/about-peru.component';
 // import { FadeInAnimationDirective } from './directives/gsap/fade-in-animation.directive';
 
 // Import the functions you need from the SDKs you need
@@ -135,6 +137,8 @@ export function playerFactory(): any {
     TrotroDiariesComponent,
     VertexPayComponent,
     ContactMeComponent,
+    PeruVideoAboutMeComponent,
+    AboutPeruComponent,
     // FadeInAnimationDirective,
   ],
   imports: [

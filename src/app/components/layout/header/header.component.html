@@ -12,8 +12,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto menu">
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio" role="button">
+            <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" role="button">
               Portfolio
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-me" routerLinkActive="active" role="button">
+              About Me
             </a>
           </li>
 
@@ -323,7 +329,8 @@
             <!-- End of Menu 2 Collapse Menu-->
 
           </li>
-          <li class="nav-item dropdown" style="position: static;">
+
+          <li class="nav-item dropdown" style="position: static; display: none;">
             <a class="nav-link coming-soon" href="#" role="button" aria-disabled="true" disabled>
               1:1 Mentorship
               <!-- <span class="coming-soon"><fa-icon [icon]="faShopLock" class="text-warning"></fa-icon>coming soon</span> -->
@@ -476,8 +483,18 @@
             </div>
             <!-- End of Menu 2 Collapse Menu-->
           </li>
+
         </ul>
-        <div>
+
+        <ul class="flex flex-space-between align-items-center m-0 p-0">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/clarice-jeberur-283054169/" target="_blank" class="btn btn-accent" style="margin: 0;">
+              <fa-icon [icon]="faLinkedIn"></fa-icon> Contact Me On LinkedIn
+            </a>
+          </li>
+        </ul>
+
+        <div style="display: none;">
           <ul class="flex flex-space-between align-items-center m-0">
             <li class="nav-item">
               <a href="#" class="btn btn-accent inverse add-to-cart-icon" style="margin: 0;"><fa-icon [icon]="faHeart"></fa-icon></a>

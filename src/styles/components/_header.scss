@@ -42,10 +42,14 @@ header {
                     font-size: 1rem;
                     margin: 0 .5em;
                     height: 100%;
-                    padding: 1em;
+                    padding: .5em;
                     color: inherit;
                     &:hover, &:focus {
                         color: $primary;
+                    }
+                    &.active {
+                        color: $accent;
+                        font-weight: $medium;
                     }
                 }
                 &.active {
@@ -127,5 +131,9 @@ header {
     .navbar-nav .dropdown-menu {
         position: absolute;
     }
-    
+    .navbar-brand {
+        &:focus-visible {
+            border: 0;
+        }
+    }
 }

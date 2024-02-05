@@ -501,6 +501,9 @@ i, span, svg, .fas, .fa fa-icon {
 }
 
 .case-study {
+    ul {
+        list-style: disc;
+    }
     .title {
         font-size: 2em;
     }
