@@ -5,15 +5,25 @@
         <div class="col-lg-6 col-12">
             <h3 class="fw-semibold">Enjoying What You’re Seeing?</h3>
             <p>Let’s get in touch and make magic together</p>
-            <form action="" class="mt-4">
+            <!-- <form (ngSubmit)="onSubmit()" class="mt-4">
                 <div class="form-group">
-                    <input type="text" name="f_name" id="" placeholder="Full Name" class="form-control">
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" class="form-control" [(ngModel)]="formData.fullName" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="content" id="" cols="20" rows="10" placeholder="How may I help you?" class="form-control"></textarea>
+                    <textarea name="content" id="content" cols="20" rows="10" placeholder="How may I help you?" class="form-control" [(ngModel)]="formData.content" required></textarea>
                 </div>
-                <input type="submit" value="Send Me a Message" class="btn btn-accent">
+                <input type="submit" role="button" value="Send Me a Message" class="btn btn-accent">
+            </form> -->
+            <form action="https://formspree.io/f/xzbneabr/claricekibii@gmail.com" method="POST" class="mt-4">
+                <div class="form-group">
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <textarea name="content" id="content" cols="20" rows="10" placeholder="How may I help you?" class="form-control"></textarea>
+                </div>
+                <input type="submit" role="button" value="Send Me a Message" class="btn btn-accent">
             </form>
+
         </div>
         <div class="col-lg-4 col-12">
             <img src="/assets/images/get-to-know-me.png" alt="Peru Profile Picture" class="h-100">
