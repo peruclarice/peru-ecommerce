@@ -30,9 +30,11 @@ img {
 
 .hero-section {
     // min-height: 85vh;
-    height: 100vh;
+    height: auto;
     padding: 1em 0;
     padding-top: 15vh;
+    overflow: hidden;
+    position: relative;
     .cta {
         p {
             font-size: 1.3em;
@@ -92,6 +94,9 @@ img {
                 transform: rotate(4deg);
             }
         }
+    }
+    div.row.align-items-center {
+        row-gap: 1em;
     }
 }
 
@@ -473,7 +478,7 @@ i, span, svg, .fas, .fa fa-icon {
 
 .ui-designs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1em;
     width: 100%;
@@ -493,7 +498,7 @@ i, span, svg, .fas, .fa fa-icon {
         }
     }
     &.phone-size {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         img {
             max-width: 240px;
         }

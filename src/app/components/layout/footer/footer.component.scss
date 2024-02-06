@@ -1,0 +1,7 @@
+@import '/src/styles/base/grid';
+
+@media screen and (min-width: $md) {
+    .social-media-icons, .contact-email {
+        justify-content: end;
+    }
+}

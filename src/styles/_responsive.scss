@@ -1,6 +1,22 @@
 @import './base/grid';
 
+@media screen and (min-width: $sm) {
+    // .hero-section {
+    //     overflow: visible;
+    // }
+    .ui-designs {
+        grid-template-columns: 1fr 1fr;
+        &.phone-size {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
 @media screen and (min-width: $md) {
+    .hero-section {
+        height: 100vh;
+        overflow: visible;
+    }
     .header {
         #navbarSupportedContent {
             position: static;
@@ -49,6 +65,12 @@
     }
     .remove-on-small-screens {
         display: block;
+    }
+    .ui-designs {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        &.phone-size {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
     }
 }
 
