@@ -1,3 +1,5 @@
+@import '/src/styles/base/grid';
+
 .slider-container {
     position: relative;
     width: 80%;
@@ -14,7 +16,7 @@
     min-width: 100%;
     box-sizing: border-box;
     max-width: 300px;
-    padding: 2em;
+    // padding: 2em;
 }
 
 img {
@@ -43,4 +45,10 @@ img {
 
 .right-arrow {
     right: 10px;
+}
+
+@media screen and (min-width: $sm) {
+    .slide {
+        padding: 2em;
+    }
 }

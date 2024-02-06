@@ -1,0 +1,11 @@
+@import '/src/styles/base/grid';
+
+iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: $md) {
+    iframe {
+        width: 660px;
+    }
+}
